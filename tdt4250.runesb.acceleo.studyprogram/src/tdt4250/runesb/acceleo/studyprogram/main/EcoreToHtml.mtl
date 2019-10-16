@@ -1,0 +1,96 @@
+[comment encoding = UTF-8 /]
+[module EcoreToHtml('http://tdt4250/runesb/studyprogram', 'http://www.eclipse.org/emf/2002/Ecore')]
+
+[template public generateElement(university : University)]
+[comment @main/]
+[file ('Studyprogram'.concat('.html'), false, 'UTF-8')]
+<html>
+<head>
+	<title>Studyprogram</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+[comment loop through programs, in case several exists in the model, and generate each/]
+[for (program : Program | university.programs)]
+	[generate(program)/]
+[/for]
+
+</body>
+
+[/file]
+[/template]
+
+[template public generate(specialisation : Specialisation)]
+	[comment set specialisation name as headline/]
+	<h2>Specialisation [specialisation.name/]</h2>
+
+	[comment if specialisation has semesters before branching out to sub-specialisations, generate semesters/]
+	[if (specialisation.semesters.oclAsSet()->size() > 0)]
+		<ul>
+		[for (semester : Semester | specialisation.semesters)]
+			<li>[generate(semester)/]</li>
+		[/for]
+		</ul>
+	[/if]
+	
+	[comment if specialisation has subspecialisations, call recursively on generate(specialisation) to generate subspecialisations/]
+	[if (specialisation.subSpecialisation.oclAsSet()->size() > 0)]
+		<ul>
+		[for (subSpecialisation : Specialisation | specialisation.subSpecialisation)]
+			<li>[generate(subSpecialisation)/]</li>
+		[/for]
+		</ul>
+	[/if]
+[/template]
+
+[template public generate(program : Program)]
+	[comment set program name to headline/]
+	<h1>[program.name/]</h1>
+	
+	[comment check if program has semesters that are not part of specialisation. if yeas genereate the semesters/]
+	[if (program.semesters.oclAsSet()->size() > 0)]
+		<ul>
+		[for (semester : Semester | program.semesters)]
+			<li>[generate(semester)/]</li>
+		[/for]
+		</ul>
+	[/if]
+
+	[comment check if program has specializations. If yes, generate all specialisations/]
+	[if (program.specialisation.oclAsSet()->size() > 0)]
+		<ul>
+		[for (specialisation : Specialisation | program.specialisation)]
+			<li>[generate(specialisation)/]</li>
+		[/for]
+		</ul>
+	[/if]
+[/template]
+
+[template public generate(semester : Semester)]
+	[comment set 'Semester semesterNumber' to headline/]
+	<h3>Semester [semester.semesterNumber/]</h3>
+	[comment create a list of course slots, and generate all courseSlots for this semester/]
+	<ul>
+	[for (courseSlot : CourseSlot | semester.courseSlots)]
+		<li>[generate(courseSlot)/]</li>
+	[/for]
+	</ul>
+[/template]
+
+[template public generate(courseSlot : CourseSlot)]
+	[comment compulsoryCourseSlot will simply list it's one course/]
+	[if (courseSlot.courseSlotType.toString().equalsIgnoreCase('compulsory'))]
+		Compulsory course:
+		[courseSlot.compulsoryCourse.courseCode/] [courseSlot.compulsoryCourse.name/] | Level: [courseSlot.compulsoryCourse.level/] | credits: [courseSlot.compulsoryCourse.credits/]
+	[/if]
+	[comment electiveCourseSlot will generate an ordered list of the elective course options available for this slot/]
+	[if (courseSlot.courseSlotType.toString().equalsIgnoreCase('elective'))]
+		Elective course options:
+		<ol>
+			[for (course : Course | courseSlot.electiveCourses)]
+				<li>[course.courseCode/] [course.name/] | Level: [course.level/] | credits: [course.credits/]</li>
+			[/for]
+		</ol>
+	[/if]
+[/template]
