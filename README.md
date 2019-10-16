@@ -19,4 +19,5 @@ To launch EcoreToHtml.mtl: run as Acceleo Application and set run configurations
 - Main Class: tdt4250.runesb.acceleo.studyprogram.main.EcoreToHtml
 - Model: /tdt4250.runesb.studyprogram/model/University2.xmi
 - Target: /tdt4250.runesb.acceleo.studyprogram/target
+
 Click apply and run, and find the transformed .html in the /target folder.
