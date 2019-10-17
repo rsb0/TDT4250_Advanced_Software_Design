@@ -9,7 +9,7 @@
 - Added enumerated datatypes courseSlotType and SemesterType.
 
 ## Transformation:
-tdt4250.runesb.studyprogram/model contains the Ecore model, the genmodel, and a serialized instance of the studyprogram Ecore model named 'University2.xmi'.
+tdt4250.runesb.studyprogram/model contains the Ecore model, the genmodel, and a serialized instance of the studyprogram Ecore model named 'University.xmi'.
 
 tdt4250.runesb.acceleo.studyprogram contains EcoreToHtml.mtl, which performs the transformation,  in /src folder, as well as an html transformation of the University2.xmi model, in the /target folder.
 
@@ -18,7 +18,7 @@ EcoreToHtml.mtl contains the template generateElement which is the main template
 To launch EcoreToHtml.mtl: run as Acceleo Application and set run configurations as follows:
 - Project: tdt4250.runesb.acceleo.studyprogram
 - Main Class: tdt4250.runesb.acceleo.studyprogram.main.EcoreToHtml
-- Model: /tdt4250.runesb.studyprogram/model/University2.xmi
+- Model: /tdt4250.runesb.studyprogram/model/University.xmi
 - Target: /tdt4250.runesb.acceleo.studyprogram/target
 
 Click apply and run, and find the transformed .html files in tdt4250.runesb.acceleo.studyprogram/target.
