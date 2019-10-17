@@ -1,6 +1,6 @@
 # TDT4250 Advanced Software Design exercise 3
 ## Changes to Ecore model from exercise 1:
-- Specialisation: Have removed attributes selectionsemester, Container reference to program, and container reference to parrent specialisation. It still has attributes name and 0-n reference to subspecialisations
+- Specialisation: Have removed attribute selectionsemester, Container reference to program, and container reference to parrent specialisation. It still has attributes name and 0-n reference to subspecialisations. Admittedly 
 - Semester: Added enumerated type attribute "semesterType" which is either spring or fall
 - courseSlot: Added enumerated attribute courseSlotType with possible values elective or compulsory. CourseSlot now has a 1-1 reference to Course if the slot is compulsory, and a 0-n reference to Course for elective courses. Which one of the two references that point to courses in a given course is decided by the courseSlotType attribute.
 - Removed semesters and specialisations from the University EClass.
