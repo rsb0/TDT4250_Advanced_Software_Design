@@ -3,23 +3,31 @@
 
 [template public generateElement(university : University)]
 [comment @main/]
-[file ('Studyprogram'.concat('.html'), false, 'UTF-8')]
+[file ('Studyprogram_Landingpage'.concat('.html'), false, 'UTF-8')]
+[comment landing page with link to all specialisations/]
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Studyprogram</title>
 	<meta charset="utf-8"/>
 </head>
 <body>
+<h1>Studyprogram</h1>
+[for (program : Program | university.programs)]
+<ul>
+	<li><a href="[program.name.concat('.html')/]">[program.programCode/] [program.name/] | [program.programType/] degree</a></li>
+</ul>
+[/for]
+</body>
+</html>
+[/file]
 
 [comment loop through programs, in case several exists in the model, and generate each/]
 [for (program : Program | university.programs)]
 	[generate(program)/]
 [/for]
-
-</body>
-
-[/file]
 [/template]
+
 
 [template public generate(specialisation : Specialisation)]
 	[comment set specialisation name as headline/]
@@ -35,9 +43,9 @@
 	[/if]
 	
 	[comment if specialisation has subspecialisations, call recursively on generate(specialisation) to generate subspecialisations/]
-	[if (specialisation.subSpecialisation.oclAsSet()->size() > 0)]
+	[if (specialisation.specialisation.oclAsSet()->size() > 0)]
 		<ul>
-		[for (subSpecialisation : Specialisation | specialisation.subSpecialisation)]
+		[for (subSpecialisation : Specialisation | specialisation.specialisation)]
 			<li>[generate(subSpecialisation)/]</li>
 		[/for]
 		</ul>
@@ -45,9 +53,10 @@
 [/template]
 
 [template public generate(program : Program)]
+	[comment Generates a new html page for this program/]
+	[file (program.name.concat('.html'), false, 'UTF-8')]
 	[comment set program name to headline/]
-	<h1>[program.name/]</h1>
-	
+	<h1>[program.programCode/] [program.name/]</h1>
 	[comment check if program has semesters that are not part of specialisation. if yeas genereate the semesters/]
 	[if (program.semesters.oclAsSet()->size() > 0)]
 		<ul>
@@ -65,6 +74,7 @@
 		[/for]
 		</ul>
 	[/if]
+	[/file]
 [/template]
 
 [template public generate(semester : Semester)]

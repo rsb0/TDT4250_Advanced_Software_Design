@@ -38,20 +38,18 @@
   <eClassifiers xsi:type="ecore:EClass" name="SemesterContainer">
     <eStructuralFeatures xsi:type="ecore:EReference" name="semesters" upperBound="-1"
         eType="#//Semester" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specialisation" upperBound="-1"
+        eType="#//Specialisation" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Program" eSuperTypes="#//SemesterContainer">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="programCode" eType="#//ProgramCode"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="specialisation" upperBound="-1"
-        eType="#//Specialisation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberOfYears" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="programType" lowerBound="1"
         eType="#//ProgramType"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Specialisation" eSuperTypes="#//SemesterContainer">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="subSpecialisation" upperBound="-1"
-        eType="#//Specialisation" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CourseSlot">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -74,7 +72,7 @@
   <eClassifiers xsi:type="ecore:EEnum" name="ProgramType">
     <eLiterals name="bachelors"/>
     <eLiterals name="masters" value="1"/>
-    <eLiterals name="integratedMasters" value="2"/>
+    <eLiterals name="integrated Masters" value="2"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="CourseSlotType">
     <eLiterals name="compulsory"/>

@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tdt4250.runesb.studyprogram:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tdt4250.runesb.studyprogram="http://tdt4250/runesb/studyprogram"
+    xsi:schemaLocation="http://tdt4250/runesb/studyprogram Studyprogram.ecore"
+    name="NTNU">
+     <courses name="Ex. phil"
+      courseCode="EXPH0004"
+      level="1"/>
+  <courses name="Introduction to Information Technology"
+      courseCode="TDT4110"
+      level="1"/>
+  <courses name="Calculus 1"
+      courseCode="TMA4100"
+      level="1"/>
+  <courses name="Discrete Mathematics"
+      courseCode="TMA4140"
+      level="1"/>
+  <courses name="Object Oriented Programming"
+      courseCode="TDT4100"
+      level="1"/>
+  <courses name="Programming Lab for Computer Science"
+      courseCode="TDT4112"
+      level="1"/>
+  <courses name="Electrical Circuits and Digital Design"
+      courseCode="TFE4101"
+      level="1"/>
+  <courses name="Calculus 3"
+      courseCode="TMA4115"
+      level="1"/>
+  <courses name="Computer Science, Programming project"
+      courseCode="TDT4113"
+      level="2"/>
+  <courses name="Software Engineering"
+      courseCode="TDT4140"
+      level="2"/>
+  <courses name="Algorithms and Datastructures"
+      courseCode="TDT4120"
+      level="2"/>
+  <courses name="Computers and Digital Design"
+      courseCode="TDT4160"
+      level="2"/>
+  <courses name="Statistics"
+      courseCode="TMA4240"
+      level="1"/>
+  <courses name="Data Modelling, Databases and Database Management Systems"
+      courseCode="TDT4145"
+      level="2"/>
+  <courses name="Human Computer Interaction"
+      courseCode="TDT4180"
+      level="2"/>
+  <courses name="Intro to AI"
+      courseCode="TDT4136"/>
+  <courses name="Information Systems"
+      courseCode="TDT4175"/>
+  <courses name="Calculus 4"
+      courseCode="TMA4135"/>
+  <courses name="Communication Services and Networks"
+      courseCode="TTM4100"
+      level="1"/>
+  <courses name="Operating Systems"
+      courseCode="TDT4186"/>
+  <courses name="Software Architecture"
+      courseCode="TDT4240"/>
+  <courses name="Physics"
+      courseCode="TFY4125"
+      level="1"/>
+  <courses name="Technology Management"
+      courseCode="TIØ4258"/>
+  <courses name="Information Systems"
+      courseCode="TDT4175"/>
+  <courses name="Information Retrieval"
+      courseCode="TDT4175"/>
+  <courses name="Cognitive Architectures"
+      courseCode="TDT4137"/>
+  <courses name="Data Warehousing and Data Mining"
+      courseCode="TDT4300"/>
+  <courses name="Artificial Intelligence Methods"
+      courseCode="TDT4171"/>
+  <courses name="Programming Languages"
+      courseCode="TDT4165"/>
+  <courses name="Customer Driven Project"
+      courseCode="TDT4290"
+      credits="15.0"
+      level="4"/>
+  <courses name="Managerial Economics"
+      courseCode="TIØ4295"
+      level="4"/>
+  <courses name="Macroeconomics for Managers"
+      courseCode="SOK1151"
+      level="4"/>
+  <courses name="Optimization and Control"
+      courseCode="TTK4135"/>
+  <courses name="Solid State Physics"
+      courseCode="TFY4220"
+      level="2"/>
+  <courses name="Advanced Software Design"
+      courseCode="TDT4250"
+      level="4"/>
+  <courses name="Advanced Software Dvelopment"
+      courseCode="TDT4242"
+      level="4"/>
+  <courses name="Experts in Team"
+      courseCode="BEIT4110"
+      level="4"/>
+  <courses name="Software Security"
+      courseCode="TDT4237"/>
+  <courses name="Digital Service Innovation"
+      courseCode="TDT4257"
+      level="4"/>
+  <courses name="User Interface Design"
+      courseCode="IT3402"
+      level="2"/>
+  <courses name="Cooperation Technology and Social Media"
+      courseCode="TDT4245"
+      level="4"/>
+  <courses name="Very Large Distributed Data Volumes"
+      courseCode="TDT4225"
+      level="4"/>
+  <courses name="Big Data Architecture"
+      courseCode="TDT4305"
+      level="4"/>
+  <courses name="Machine Learning"
+      courseCode="TDT4174"
+      level="4"/>
+  <courses name="Artificial Intelligence Programming"
+      courseCode="IT3105"
+      level="4"/>
+  <courses name="Computer Science Specialisationproject"
+      courseCode="TDT4501"
+      credits="15.0"
+      level="5"/>
+  <courses name="Computer Science Specialisation Course"
+      courseCode="TDT4506"
+      level="5"/>
+  <courses name="Computer Science Master Thesis"
+      courseCode="TDT4900"
+      level="5"/>
+  <courses name="Strategy and Change in technology companies"
+      courseCode="BSOL4610"/>
+  <courses name="Architecture as a Technological Practice"
+      courseCode="AAR4250"/>
+  <programs
+      name="Computer Science, 2 year masters"
+      programCode="MIDT"
+      numberOfYears="2"
+      programType="masters">
+	<specialisation
+        name="Databases and Search">
+      <semesters
+      		semesterNumber="1"
+          	semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4225"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TIØ4295 SOK1151"/>
+        <courseSlots
+            compulsoryCourse="TDT4290"/>
+      </semesters>
+      <semesters
+      	semesterNumber="2"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4305"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TTK4135 TFY4220"/>
+        <courseSlots
+            compulsoryCourse="BEIT4110"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TDT4237 TDT4257"/>
+      </semesters>
+      <semesters
+      		semesterNumber="3"
+          	semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4501"/>
+        <courseSlots
+            compulsoryCourse="TDT4506"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="BSOL4610 AAR4250"/>
+      </semesters>
+      <semesters
+      	semesterNumber="4"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4900"/>
+      </semesters>
+    </specialisation>
+    <specialisation
+        name="Artificial Intelligence">
+      <semesters
+      	  semesterNumber="1"
+          semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4174"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TIØ4295 SOK1151"/>
+        <courseSlots
+            compulsoryCourse="TDT4290"/>
+      </semesters>
+      <semesters
+      	semesterNumber="2"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="IT3105"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TTK4135 TFY4220"/>
+        <courseSlots
+            compulsoryCourse="BEIT4110"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TDT4237 TDT4257"/>
+      </semesters>
+      <semesters
+      	  semesterNumber="3"
+          semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4501"/>
+        <courseSlots
+            compulsoryCourse="TDT4506"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="BSOL4610 AAR4250"/>
+      </semesters>
+      <semesters
+      	semesterNumber="4"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4900"/>
+      </semesters>
+    </specialisation>
+    <specialisation
+    name="Interaction Design and Game Technology">
+        <semesters
+        	semesterNumber="1"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="IT3402"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TIØ4295 SOK1151"/>
+          <courseSlots
+              compulsoryCourse="TDT4290"/>
+        </semesters>
+        <semesters
+        	semesterNumber="2"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4245"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TTK4135 TFY4220"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TDT4237 TDT4257"/>
+          <courseSlots
+              compulsoryCourse="BEIT4110"/>
+        </semesters>
+        <semesters
+        	semesterNumber="3"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="TDT4501"/>
+          <courseSlots
+              compulsoryCourse="TDT4506"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="BSOL4610 AAR4250"/>
+        </semesters>
+        <semesters
+        	semesterNumber="4"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4900"/>
+        </semesters>   
+    </specialisation>
+    <specialisation
+    name="Software Engineering">
+        <semesters
+        	semesterNumber="1"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="TDT4290"/>
+          <courseSlots
+              compulsoryCourse="TDT4250"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TIØ4295 SOK1151"/>
+        </semesters>
+        <semesters
+        	semesterNumber="2"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4242"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TDT4237 TDT4257"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TTK4135 TFY4220"/>
+          <courseSlots
+              compulsoryCourse="BEIT4110"/>
+        </semesters>
+        <semesters
+        	semesterNumber="3"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="TDT4501"/>
+          <courseSlots
+              compulsoryCourse="TDT4506"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="BSOL4610 AAR4250"/>
+        </semesters>
+        <semesters
+        	semesterNumber="4"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4900"/>
+        </semesters>
+    </specialisation>
+  </programs>
+  
+    <programs
+      name="Computer Science"
+      numberOfYears="10"
+      programType="integrated Masters">
+    <semesters
+    	semesterNumber="1"
+        semesterType="fall">
+      <courseSlots
+          compulsoryCourse="EXPH0004"/>
+      <courseSlots
+          compulsoryCourse="TDT4110"/>
+      <courseSlots
+          compulsoryCourse="TMA4100"/>
+      <courseSlots
+          compulsoryCourse="TMA4140"/>
+    </semesters>
+    <semesters
+    	semesterNumber="2"
+    	semesterType="spring">
+      <courseSlots
+          compulsoryCourse="TDT4100"/>
+      <courseSlots
+          compulsoryCourse="TDT4112"/>
+      <courseSlots
+          compulsoryCourse="TFE4101"/>
+      <courseSlots
+          compulsoryCourse="TMA4115"/>
+    </semesters>
+    <semesters
+    	semesterNumber="3"
+        semesterType="fall">
+      <courseSlots
+          compulsoryCourse="TDT4113"/>
+      <courseSlots
+          compulsoryCourse="TDT4120"/>
+      <courseSlots
+          compulsoryCourse="TDT4160"/>
+      <courseSlots
+          compulsoryCourse="TMA4240"/>
+    </semesters>
+    <semesters
+    	semesterNumber="4"
+    	semesterType="spring">
+      <courseSlots
+          compulsoryCourse="TDT4140"/>
+      <courseSlots
+          compulsoryCourse="TDT4145"/>
+      <courseSlots
+          compulsoryCourse="TDT4180"/>
+      <courseSlots
+          compulsoryCourse="TTM4100"/>
+    </semesters>
+    <specialisation
+        name="Software">
+      <semesters
+			semesterNumber="5"
+			semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4136"/>
+        <courseSlots
+            compulsoryCourse="TMA4135"/>
+        <courseSlots
+            compulsoryCourse="TDT4175"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TDT4175 TDT4137 TDT4165"/>
+      </semesters>
+      <semesters
+      		semesterNumber="6"
+    		semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4186"/>
+        <courseSlots
+            compulsoryCourse="TFY4125"/>
+        <courseSlots
+            compulsoryCourse="TIØ4258"/>
+        <courseSlots
+            compulsoryCourse="TDT4240"/>
+      </semesters>
+      <specialisation
+          name="Software Engineering">
+        <semesters
+        	semesterNumber="7"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="TDT4290"/>
+          <courseSlots
+              compulsoryCourse="TDT4250"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TIØ4295 SOK1151"/>
+        </semesters>
+        <semesters
+        	semesterNumber="8"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4242"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TDT4237 TDT4257"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TTK4135 TFY4220"/>
+          <courseSlots
+              compulsoryCourse="BEIT4110"/>
+        </semesters>
+        <semesters
+        	semesterNumber="9"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="TDT4501"/>
+          <courseSlots
+              compulsoryCourse="TDT4506"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="BSOL4610 AAR4250"/>
+        </semesters>
+        <semesters
+        	semesterNumber="10"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4900"/>
+        </semesters>
+      </specialisation>
+      <specialisation
+          name="Interaction Design and Game Technology">
+        <semesters
+        	semesterNumber="7"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="IT3402"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TIØ4295 SOK1151"/>
+          <courseSlots
+              compulsoryCourse="TDT4290"/>
+        </semesters>
+        <semesters
+        	semesterNumber="8"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4245"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TTK4135 TFY4220"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="TDT4237 TDT4257"/>
+          <courseSlots
+              compulsoryCourse="BEIT4110"/>
+        </semesters>
+        <semesters
+        	semesterNumber="9"
+            semesterType="fall">
+          <courseSlots
+              compulsoryCourse="TDT4501"/>
+          <courseSlots
+              compulsoryCourse="TDT4506"/>
+          <courseSlots
+              courseSlotType="elective"
+              electiveCourses="BSOL4610 AAR4250"/>
+        </semesters>
+        <semesters
+        	semesterNumber="10"
+    		semesterType="spring">
+          <courseSlots
+              compulsoryCourse="TDT4900"/>
+        </semesters>
+      </specialisation>
+    </specialisation>
+    <specialisation
+        name="Databases and Search">
+      <semesters
+      		semesterNumber="5"
+          	semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4136"/>
+        <courseSlots
+            compulsoryCourse="TMA4135"/>
+        <courseSlots
+            compulsoryCourse="TDT4175"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TDT4175 TDT4137 TDT4165"/>
+      </semesters>
+      <semesters
+      	semesterNumber="6"
+      	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4186"/>
+        <courseSlots
+            compulsoryCourse="TFY4125"/>
+        <courseSlots
+            compulsoryCourse="TIØ4258"/>
+        <courseSlots
+            compulsoryCourse="TDT4300"/>
+      </semesters>
+      <semesters
+      		semesterNumber="7"
+          	semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4225"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TIØ4295 SOK1151"/>
+        <courseSlots
+            compulsoryCourse="TDT4290"/>
+      </semesters>
+      <semesters
+      	semesterNumber="8"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4305"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TTK4135 TFY4220"/>
+        <courseSlots
+            compulsoryCourse="BEIT4110"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TDT4237 TDT4257"/>
+      </semesters>
+      <semesters
+      		semesterNumber="9"
+          	semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4501"/>
+        <courseSlots
+            compulsoryCourse="TDT4506"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="BSOL4610 AAR4250"/>
+      </semesters>
+      <semesters
+      	semesterNumber="10"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4900"/>
+      </semesters>
+    </specialisation>
+    <specialisation
+        name="Artificial Intelligence">
+      <semesters
+      	  semesterNumber="5"
+          semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4136"/>
+        <courseSlots
+            compulsoryCourse="TMA4135"/>
+        <courseSlots
+            compulsoryCourse="TDT4137"/>
+      </semesters>
+      <semesters
+      	semesterNumber="6"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4186"/>
+        <courseSlots
+            compulsoryCourse="TFY4125"/>
+        <courseSlots
+            compulsoryCourse="TIØ4258"/>
+        <courseSlots
+            compulsoryCourse="TDT4171"/>
+      </semesters>
+      <semesters
+      	  semesterNumber="7"
+          semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4174"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TIØ4295 SOK1151"/>
+        <courseSlots
+            compulsoryCourse="TDT4290"/>
+      </semesters>
+      <semesters
+      	semesterNumber="8"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="IT3105"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TTK4135 TFY4220"/>
+        <courseSlots
+            compulsoryCourse="BEIT4110"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="TDT4237 TDT4257"/>
+      </semesters>
+      <semesters
+      	  semesterNumber="9"
+          semesterType="fall">
+        <courseSlots
+            compulsoryCourse="TDT4501"/>
+        <courseSlots
+            compulsoryCourse="TDT4506"/>
+        <courseSlots
+            courseSlotType="elective"
+            electiveCourses="BSOL4610 AAR4250"/>
+      </semesters>
+      <semesters
+      	semesterNumber="10"
+    	semesterType="spring">
+        <courseSlots
+            compulsoryCourse="TDT4900"/>
+      </semesters>
+    </specialisation>
+  </programs>
+</tdt4250.runesb.studyprogram:University>
