@@ -11,7 +11,7 @@
 ## Transformation:
 tdt4250.runesb.studyprogram/model contains the Ecore model, the genmodel, and a serialized instance of the studyprogram Ecore model named 'University.xmi'.
 
-tdt4250.runesb.acceleo.studyprogram contains EcoreToHtml.mtl, which performs the transformation,  in /src folder, as well as an html transformation of the University2.xmi model, in the /target folder.
+tdt4250.runesb.acceleo.studyprogram contains EcoreToHtml.mtl, which performs the transformation,  in /src folder, as well as an html transformation of the University.xmi model, in the /target folder.
 
 EcoreToHtml.mtl contains the template generateElement which is the main template that initialises the transform it creates a landingpage html file with links to the different programs' pages. EcoreToHtml also contains 4 other templates named generate(anEClass : Eclass) which takes four different arguments in order to transform Program (which in turn generates a new html file for this program's page), Semester, CourseSlot and Specialisation to html. I have mainly used Acceleos for loops and and if statements to loop over programs, specialisations, semesters, and course slots, and used ordered and unordered lists in html to organize the transformed model.
 
